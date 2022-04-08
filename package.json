@@ -1,0 +1,14 @@
+{
+  "name": "flea-bottom-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "flea-bottom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guangnian",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

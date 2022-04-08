@@ -1,0 +1,412 @@
+/* ------------common---------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input {
+  -moz-appearance: textfield;
+}
+
+input {
+  background-color: rgb(32,34,49);
+  border: 0;
+  outline: none;
+  caret-color: rgb(248,200,101);
+  color: aliceblue;
+}
+
+select {
+  background-color: rgb(32,34,49);
+  border: 0;
+  outline: none;
+  caret-color: rgb(248,200,101);
+  color: aliceblue;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix { /*IE6,7专有*/
+  *zoom: 1;
+}
+
+a {
+  color: rgb(127,127,127);
+  text-decoration: none;
+  font-weight: 800;
+}
+a:hover {
+  color: rgb(225,225,225);
+}
+
+body {
+  background-color: rgb(21,9,31);
+  color: rgb(225,225,225);
+}
+/* -------top--------- */
+.top {
+  padding: 16px 50px;
+  width: auto;
+  height: 80px;
+  /* background-color: rgb(0, 174, 236); */
+}
+
+.logo {
+  float: left;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.connectWallte {
+  margin-left: 16px;
+  float: right;
+  width: 160px;
+  height: 48px;
+  background-color: rgb(248,200,101);
+  line-height: 48px;
+  text-align: center;
+}
+
+.message {
+  float: right;
+  width: 80px;
+  height: 48px;
+  /* background-color: rgb(32,34,49); */
+  line-height: 48px;
+  text-align: center;
+}
+
+
+/* -------------------operator---------------------- */
+.operator {
+  height: 500px;
+  width: 700px;
+  margin: 50px auto;
+  background-color:  rgb(32,34,49);
+}
+/* ----operator->action---- */
+.operator .action {
+  height: 50px;
+}
+
+.operator .action div {
+  float: left;
+  height: 50px;
+  width: 150px;
+  /* margin-left: 10px; */
+  line-height: 50px;
+  text-align: center;
+}
+
+.operator .action div:hover {
+  background-color: rgb(22,21,34);
+}
+
+.selectedBgc {
+  background-color: rgb(22,21,34);
+}
+
+
+/* ----operator->theForm---- */
+
+.operator .theForm {
+  width: 700px;
+  height: 450px;
+  background-color: rgb(22,21,34);
+}
+
+/* ----operator->theForm->dealform--- */
+.operator .theForm .dealForm {
+  display: none;
+  padding: 100px 100px 100px 100px;
+}
+.orderId {
+  width: 500px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(248,200,101);
+}
+
+.orderIdName {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 40px;
+}
+
+.dealConfirm{
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: rgb(248,200,101);
+  margin-top: 20px;
+}
+
+/* ----operator->theForm->buyform--- */
+
+.buyForm {
+  display: none;
+  padding: 50px 0 0 100px;
+}
+
+.buyForm .contractInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.buyForm .contractInput div{
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+ }
+
+.buyForm .contractInput input {
+  width: 300px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+
+
+.buyForm .contractInput img{
+  width: 35px;
+  height: 35px;
+}
+
+.buyForm .contractInput .projectName {
+  font-size: 12px;
+}
+
+.buyForm .tokenIdName {
+  margin-top: 15px;
+}
+.buyForm .tokenIdInput {
+  margin-top: 10px;
+  height: 35px;
+}
+.buyForm .tokenIdInput div{
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+ }
+.buyForm .tokenIdInput input {
+  width: 200px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+.buyForm .tokenIdInput img{
+  width: 35px;
+  height: 35px;
+}
+.buyForm .tokenIdInput span{
+  font-size: 12px;
+
+}
+
+.buyForm .priceName {
+  margin-top: 15px;
+}
+
+.buyForm .priceInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.buyForm .priceInput div {
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+}
+.buyForm .priceInput input {
+  width: 150px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+
+.buyForm .durationName {
+  margin-top: 15px;
+}
+.buyForm .durationInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.buyForm .durationInput div {
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+}
+
+.buyForm .durationInput input {
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+.buyForm .durationInput select {
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+}
+
+.buyForm .buyConfirm{
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: rgb(248,200,101);
+  margin-top: 25px;
+}
+
+/* ----operator->theForm->sellform--- */
+
+.sellForm {
+  display: none;
+  padding: 50px 0 0 100px;
+}
+
+.sellForm .sellContractInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.sellForm .sellContractInput div{
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+ }
+
+.sellForm .sellContractInput input {
+  width: 300px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+
+
+.sellForm .sellContractInput img{
+  width: 35px;
+  height: 35px;
+}
+
+.sellForm .sellContractInput span {
+  font-size: 12px;
+}
+
+.sellForm .sellTokenIdName {
+  margin-top: 15px;
+}
+.sellForm .selltokenIdInput {
+  margin-top: 10px;
+  height: 35px;
+}
+.sellForm .selltokenIdInput div{
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+ }
+.sellForm .selltokenIdInput input {
+  width: 200px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+.sellForm .selltokenIdInput img{
+  width: 35px;
+  height: 35px;
+}
+.sellForm .selltokenIdInput span{
+  font-size: 12px;
+
+}
+
+.sellForm .sellPriceName {
+  margin-top: 15px;
+}
+
+.sellForm .sellPriceInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.sellForm .sellPriceInput div {
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+}
+.sellForm .sellPriceInput input {
+  width: 150px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+
+.sellForm .sellDurationName {
+  margin-top: 15px;
+}
+.sellForm .sellDurationInput {
+  margin-top: 10px;
+  height: 35px;
+}
+
+.sellForm .sellDurationInput div {
+  float: left;
+  margin-right: 10px;
+  line-height: 35px;
+}
+
+.sellForm .sellDurationInput input {
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+  color: rgb(248,200,101);
+}
+.sellForm .sellDurationInput select {
+  width: 100px;
+  height: 35px;
+  font-size: 17px;
+}
+
+.sellForm .sellConfirm{
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: rgb(248,200,101);
+  margin-top: 25px;
+}
+
+
+
+
+
+.bottonClicked {
+  display: block !important;
+}
+
+/* .footer {
+  padding: 0 50px;
+  width: auto;
+  height: 120px;
+  background-color: rgb(0, 174, 236);
+} */
